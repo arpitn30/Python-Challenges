@@ -1,4 +1,7 @@
+# Program to take commands from user and implement list functions as requested
+
 def func(list, cmnd):
+    """Implement list functions using arguments from the user"""
     if(cmnd[0] == "insert"):
         list.insert(int(cmnd[1]), int(cmnd[2]))
     elif (cmnd[0] == "print"):
