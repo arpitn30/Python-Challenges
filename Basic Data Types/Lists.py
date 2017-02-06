@@ -1,31 +1,29 @@
 # Program to take commands from user and implement list functions as requested
 
+
 def func(list, cmnd):
     """Implement list functions using arguments from the user"""
-    if(cmnd[0] == "insert"):
+    if cmnd[0] == "insert":
         list.insert(int(cmnd[1]), int(cmnd[2]))
-    elif (cmnd[0] == "print"):
-        print list
-    elif (cmnd[0] == "remove"):
+    elif cmnd[0] == "print":
+        print(list,end="\n")
+    elif cmnd[0] == "remove":
         list.remove(int(cmnd[1]))
-    elif (cmnd[0] == "append"):
+    elif cmnd[0] == "append":
         list.append(int(cmnd[1]))
-    elif(cmnd[0] == "sort"):
+    elif cmnd[0] == "sort":
         list.sort()
-    elif(cmnd[0] == "pop"):
+    elif cmnd[0] == "pop":
         list.pop()
-    elif(cmnd[0] == "reverse"):
+    elif cmnd[0] == "reverse":
         list.reverse()
     else:
-        print "Wrong Command\n"
-
-
+        print("Wrong Command\n")
 
 if __name__ == '__main__':
-    list = []
-    N = int(raw_input())
+    lst = []
+    N = int(input("Enter no of commands: "))
     for i in range(N):
-        inp = raw_input()
-        #print inp
+        inp = input("Enter command: ")
         cmnd = inp.split()
-        func(list, cmnd)
+        func(lst, cmnd)
