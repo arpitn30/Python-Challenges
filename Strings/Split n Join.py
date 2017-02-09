@@ -6,6 +6,6 @@ def split_and_join(line):
     return '-'.join(line)
 
 if __name__ == '__main__':
-    line = input()
+    line = input('Enter String: ')
     result = split_and_join(line)
     print(result)
