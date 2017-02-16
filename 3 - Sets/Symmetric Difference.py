@@ -13,10 +13,10 @@ def symm_diff(M, N):
     return list(U-X)
 
 if __name__ == '__main__':
-    n = int(input())
-    M = list(map(int, input().split()))
-    n = int(input())
-    N = list(map(int, input().split()))
+    n = int(input('Enter no of elements: '))
+    M = list(map(int, input().split('Enter Elements of M: ')))
+    n = int(input('Enter no of elements: '))
+    N = list(map(int, input('Enter Elements of M: ').split()))
 
     result = symm_diff(M, N)
     result.sort()

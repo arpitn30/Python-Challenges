@@ -10,7 +10,7 @@ def average(array):
     return add / length
 
 if __name__ == '__main__':
-    n = int(input())
-    arr = list(map(int, input().split()))
+    n = int(input('Enter no of elements: '))
+    arr = list(map(int, input('Enter Elements: ').split()))
     result = average(arr)
     print(result)
